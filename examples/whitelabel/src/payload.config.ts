@@ -22,26 +22,28 @@ export default buildConfig({
     },
     // Add your own meta data here
     meta: {
-      description: 'This is a custom meta description',
+      description:
+        "Bulldozer Intel™ - Local 825's AI-powered construction industry platform. Get insights, news, projects, and AI assistance for the construction industry.",
       icons: [
         {
           type: 'image/png',
           rel: 'icon',
-          url: '/assets/favicon.svg',
+          url: '/assets/favicon.png',
         },
       ],
       openGraph: {
-        description: 'This is a custom OG description',
+        description:
+          "Bulldozer Intel™ - Local 825's AI-powered construction industry platform. Get insights, news, projects, and AI assistance for the construction industry.",
         images: [
           {
             height: 600,
-            url: '/assets/ogImage.png',
+            url: '/825-logo.png',
             width: 800,
           },
         ],
-        title: 'This is a custom OG title',
+        title: 'Bulldozer Intel™ - Local 825 AI Platform',
       },
-      titleSuffix: '- Your App Name',
+      titleSuffix: '- Bulldozer Intel™',
     },
   },
   db: mongooseAdapter({
@@ -52,7 +54,7 @@ export default buildConfig({
     schemaOutputFile: path.resolve(dirname, 'generated-schema.graphql'),
   },
   secret: process.env.PAYLOAD_SECRET || '',
-  serverURL: 'http://localhost:3000',
+  serverURL: 'http://localhost:4000',
   typescript: {
     outputFile: path.resolve(dirname, 'payload-types.ts'),
   },

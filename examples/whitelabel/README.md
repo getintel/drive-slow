@@ -1,6 +1,6 @@
-# Payload White-label Example
+# Bulldozer Intel™ - Local 825 AI Platform
 
-This example demonstrates how to re-brand or white-label the [Payload Admin Panel](https://payloadcms.com/docs/admin/overview#the-admin-panel) by modifying the favicon, icon, logo, ogImage and title suffix.
+This is Local 825's AI-powered construction industry platform built with [Payload CMS](https://payloadcms.com/docs/admin/overview#the-admin-panel). The platform provides AI assistance, company insights, news, projects, and more for the construction industry.
 
 ## Quick Start
 
@@ -15,23 +15,25 @@ To spin up this example locally, follow these steps:
 4. `open http://localhost:3000/admin` to access the admin panel
 5. Login with email `dev@payloadcms.com` and password `test`
 
-## Re-branding walkthrough
+## Platform Features
 
-Start by navigating to the `payload.config.ts` file and then take a look at the admin property.
+Bulldozer Intel™ provides the following features for Local 825 members:
 
-The following sub-properties have already been configured:
+- **AI Chat Assistant**: Get instant answers to construction industry questions
+- **Company Insights**: Access to industry data and analytics
+- **News & Updates**: Latest construction industry news and Local 825 updates
+- **Project Management**: Track and manage construction projects
+- **Member Resources**: Access to training materials and industry resources
 
-`meta.icons`: Images that will be displayed as the tab icon.
+## Branding Configuration
 
-`meta.openGraph.images`: Images that will appear in the preview when you share links to your admin panel online and through social media.
+The platform has been customized with Local 825 branding:
 
-`meta.titleSuffix`: Text that appends the meta/page title displayed in the browser tab — _must be a string_.
-
-`graphics.Logo`: Image component to be displayed as the logo on the Sign Up / Login view.
-
-`graphics.Icon`: Image component displayed above the Nav in the admin panel, often a condensed version of a full logo.
-
-👉 Check out this blog post for a more in-depth walkthrough: [White-label the Admin UI](https://payloadcms.com/blog/white-label-admin-ui)
+- **Favicon**: Local 825 logo for browser tabs
+- **Admin Logo**: Full Bulldozer Intel™ branding in the admin panel
+- **Admin Icon**: Local 825 logo in the navigation
+- **Meta Information**: SEO-optimized for construction industry searches
+- **Social Media**: Custom Open Graph images for sharing
 
 ## Development
 
