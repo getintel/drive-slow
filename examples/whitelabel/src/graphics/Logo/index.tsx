@@ -6,11 +6,13 @@ const css = `
     align-items: center;
     gap: 12px;
     height: 43.5px;
+    max-width: 300px;
   }
 
   .logo-image {
     height: 40px;
     width: auto;
+    border-radius: 6px;
   }
 
   .logo-text {

@@ -13,13 +13,6 @@ export default buildConfig({
     importMap: {
       baseDir: path.resolve(dirname),
     },
-    // Add your own logo and icon here
-    components: {
-      graphics: {
-        Icon: '/graphics/Icon/index.tsx#Icon',
-        Logo: '/graphics/Logo/index.tsx#Logo',
-      },
-    },
     // Add your own meta data here
     meta: {
       description:
@@ -45,6 +38,13 @@ export default buildConfig({
       },
       titleSuffix: '- Bulldozer Intel™',
     },
+    // Add custom graphics
+    components: {
+      graphics: {
+        Icon: '/graphics/Icon/index.tsx#Icon',
+        Logo: '/graphics/Logo/index.tsx#Logo',
+      },
+    },
   },
   db: mongooseAdapter({
     url: process.env.DATABASE_URI || '',
@@ -54,7 +54,7 @@ export default buildConfig({
     schemaOutputFile: path.resolve(dirname, 'generated-schema.graphql'),
   },
   secret: process.env.PAYLOAD_SECRET || '',
-  serverURL: 'http://localhost:4000',
+  serverURL: process.env.PAYLOAD_PUBLIC_SERVER_URL || 'http://localhost:4000',
   typescript: {
     outputFile: path.resolve(dirname, 'payload-types.ts'),
   },
